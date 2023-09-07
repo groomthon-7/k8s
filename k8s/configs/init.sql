@@ -1,4 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS 'groomthon' DEFAULT CHARACTER SET utf8mb4;
+CREATE SCHEMA IF NOT EXISTS groomthon DEFAULT CHARACTER SET utf8mb4;
 
 GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
 GRANT ALL ON groomthon.* TO 'root'@'localhost';
@@ -6,7 +6,7 @@ FLUSH PRIVILEGES;
 
 USE `groomthon`;
 
-DROP TABLE IF EXISTS 'CampingSite';
+DROP TABLE IF EXISTS CampingSite;
 CREATE TABLE CampingSite (
     id INT AUTO_INCREMENT PRIMARY KEY,
     businessName VARCHAR(255),
