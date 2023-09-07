@@ -23,7 +23,7 @@ spec:
             - name: TZ
               value: Asia/Seoul
             - name: MARIADB_ROOT_PASSWORD
-              value: "1234"
+              value: aaa
             - name: MARIADB_DATABASE
               value: groomthon
             - name: MARIADB_DISABLE_UPGRADE_BACKUP
