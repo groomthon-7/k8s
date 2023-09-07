@@ -6,18 +6,18 @@ FLUSH PRIVILEGES;
 
 USE `groomthon`;
 
-DROP TABLE IF EXISTS CampingSite;
-CREATE TABLE CampingSite (
+DROP TABLE IF EXISTS `CampingSite`;
+CREATE TABLE `CampingSite` (
     id INT AUTO_INCREMENT PRIMARY KEY,
     businessName VARCHAR(255),
     phoneNumber VARCHAR(20),
     address VARCHAR(255),
     latitude DECIMAL(9, 6),
     longitude DECIMAL(9, 6),
-    glampingCount INT,
-    caravanCount INT,
-    campingDeckCount INT,
-    outdoorCampingCount INT,
+    glampingCount VARCHAR(255),
+    caravanCount VARCHAR(255),
+    campingDeckCount VARCHAR(255),
+    outdoorCampingCount VARCHAR(255),
     hasToilet CHAR(1),
     hasShower CHAR(1),
     hasWashbasin CHAR(1),
