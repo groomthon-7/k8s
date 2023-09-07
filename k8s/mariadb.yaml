@@ -23,9 +23,9 @@ spec:
             - name: TZ
               value: Asia/Seoul
             - name: MARIADB_ROOT_PASSWORD
-              value: root
+              value: 1234
             - name: MARIADB_DATABASE
-              value: krampoline
+              value: groomthon
             - name: MARIADB_DISABLE_UPGRADE_BACKUP
               value: '1'
           volumeMounts:
