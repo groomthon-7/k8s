@@ -33,7 +33,7 @@ spec:
               name: data
               subPath: mysql
             - mountPath: /docker-entrypoint-initdb.d
-              name: init
+              name: init-db
           resources:
             limits:
               memory: 1Gi
@@ -41,9 +41,9 @@ spec:
             tcpSocket:
               port: 3306
       volumes:
-        - name: init
+        - name: init-db
           configMap:
-            name: init
+            name: init-db
   volumeClaimTemplates:
     - metadata:
         name: data
